@@ -85,6 +85,12 @@
 				status = "okay";
 			};
 
+			auart1: serial@8006e000 {
+				pinctrl-names = "default";
+				pinctrl-0 = <&auart1_2pins_a>;
+				status = "okay";
+			};
+
 			usbphy0: usbphy@8007c000 {
 				status = "okay";
 			};
