@@ -32,6 +32,14 @@
 				fsl,pull-up = <1>;
 				status = "okay";
 			};
+			
+			ssp1: ssp@80034000 {
+				compatible = "fsl,imx23-mmc";
+				pinctrl-names = "default";
+				pinctrl-0 = <&mmc1_4bit_pins_a>;
+				bus-width = <4>;
+				status = "okay";
+			};
 
 			pinctrl@80018000 {
 				pinctrl-names = "default";
