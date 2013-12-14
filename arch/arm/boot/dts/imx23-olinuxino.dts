@@ -55,10 +55,10 @@
 					fsl,pull-up = <0>;
 				};
 
-				led_pin_gpio2_1: led_gpio2_1@0 {
+				led_pin_gpio1_21: led_gpio1_21@0 {
 					reg = <0>;
 					fsl,pinmux-ids = <
-						0x2013 /* MX23_PAD_SSP1_DETECT__GPIO_2_1 */
+						0x1153 /* MX23_PAD_LCD_CS__GPIO_1_21 */
 					>;
 					fsl,drive-strength = <0>;
 					fsl,voltage = <1>;
@@ -135,11 +135,11 @@
 	leds {
 		compatible = "gpio-leds";
 		pinctrl-names = "default";
-		pinctrl-0 = <&led_pin_gpio2_1>;
+		pinctrl-0 = <&led_pin_gpio1_21>;
 
 		user {
 			label = "green";
-			gpios = <&gpio2 1 1>;
+			gpios = <&gpio1 21 1>;
 		};
 	};
 };
